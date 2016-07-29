@@ -1,14 +1,24 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+<!--Doc type and language type declarations -->
+
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Pittman's CSP Website</title>
 <meta name="keywords" content="css templates, fortune website, CSS, HTML" />
 <meta name="description" content="Fortune Template is a free css template from templatemo.com" />
 <link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+<title>Pittman's CSP Website</title>
 </head>
-<body>
+<!--Head section: Meta tags are invisible data for browswers,
+the link tells the page which css style sheet to use,
+title appears on top of page  -->
 
+<body>
+<!--Div tags are used to divide pages into regions with different styles.
+A break exists before and after a set of div tags.
+The id property targets a section of the .css file and gets style data from it.
+See "http://www.w3schools.com/html/html_layout.asp" for layout
+The below sections are the page header sections.-->
 <div id="templatemo_header_wrapper">
     <div id="templatemo_header_panel">
         <div id="templatemo_header">
@@ -25,26 +35,50 @@
     </div>
 </div>
 
+<!-- The below section is for the navigation bar-->
 <div id="templatemo_menu_wrapper">
     <div id="templatemo_menu_panel">
+        <!-- The ul tag defines a list with elements defined by li -->
         <ul>
             <li><a href="#" class="current">Home</a></li>
-            <li><a href="http://www.chino.k12.ca.us/Domain/1768" target="_blank">Bio</a></li>
+            <li><a href="http://www.chino.k12.ca.us/Domain/1768" target="_blank">Full Bio</a></li>
             <li><a href="http://www.chino.k12.ca.us/Page/16139" target="_blank">AP CSP Home</a></li>
             <li><a href="" target="_blank">Portfolio</a></li>  
             <li><a href="http://www.ayalastemrobotics.club/" target="_blank">STEM Robotics</a></li> 
             <li><a href="mailto:Anthony_Pittman@chino.k12.ca.us" target="_blank" class="last">Contact</a></li>                     
         </ul> 
     </div>
-</div> <!-- end of menu -->
+</div>
 
+<!-- The below section creates a 3 column layout in the body.
+The columns are defined from left to right: 
+changing code order changes column order-->
 <div id="templatemo_content_wrapper">
 <div id="templatemo_content_panel">
 
+    <!-- First column-->
     <div class="content_panel_3col_section margin_right_60">
-
+        <div class="header_01">About Mr. Pittman</div>
+        <p>My name is Mr. Anthony Pittman. I am the Lead for Ayala's Academy of Computer and Engineering Sciences (ACES) and co-Chair of the Linked Learning Academies program. The ACES academy focuses on programming, robotics, and automation. I currently teach <a href="https://advancesinap.collegeboard.org/stem/computer-science-principles">AP CSP</a>and <a href="https://www.pltw.org/our-programs/pltw-engineering/pltw-engineering-curriculum">Principles of Engineering</a> at <a href="http://www.chino.k12.ca.us/Ayala">Ruben S Ayala High School. </a> Some facts about Mr. Pittman:</p>
+        <ul class="services">
+        <!-- The ul tag defines a list with elements defined by li -->
+            <li>Graduated with a Bachelor's from UC San Diego</li>
+            <li>Obtained a Master's in Technology Teaching from NU</li>
+            <li>Worked in the Information Technology industry for 8 years</li>
+            <li>Taught Advanced Placement courses for 9 years</li>
+            <li>Loves robots, cats, computers, and especially his wife</li>
+            <li>Use the "Full Bio" button to read more - you won't be sorry</li>
+        </ul>
+    </div>
+    
+    <!-- Second column-->  
+    <div class="content_panel_3col_section margin_right_60">
         <div class="header_01">My Scratch Project</div>
-        <div class="image_box_01"><img src="images/scratchcapture.jpg" height=200 width=270></div>
+        <div class="image_box_01">
+            <a href="https://scratch.mit.edu/projects/117127764/">
+                <img src="images/scratchcapture.jpg" height=200 width=270>
+            </a>
+        </div>
         <div class="p_section"><div align="center">My First Scratch Project - The Story of CSP</div></div>
         <p>The crazy story of our journey at Cal Poly Pomona CSP training! Click the pic!</p>
         
@@ -53,66 +87,29 @@
         <p>This app will store your location when you scan any QR. Store two location and then see the quickest route between the two and your current location! <a href="files\Geolocation.apk">Download</a> the app. See the <a href="files\Geolocation.aia">code.</a>
     </div>
     
-    <div class="content_panel_3col_section margin_right_60">
-        <div class="header_01">About Mr. Pittman</div>
-        <p>My name is Mr. Anthony Pittman. I am the Lead for Ayala's Academy of Computer and Engineering Sciences (ACES) and co-Chair of the Linked Learning Academies program. The ACES academy focuses on programming, robotics, and automation. I currently teach <a href="https://advancesinap.collegeboard.org/stem/computer-science-principles">AP CSP</a>and <a href="https://www.pltw.org/our-programs/pltw-engineering/pltw-engineering-curriculum">Principles of Engineering</a> at <a href="http://www.chino.k12.ca.us/Ayala">Ruben S Ayala High School. </a> Some facts about Mr. Pittman:</p>
-        <ul class="services">
-            <li>Graduated with a Bachelor's from UC San Diego</li>
-            <li>Obtained a Master's in Technology Teaching from NU</li>
-            <li>Worked in the Information Technology industry for 8 years</li>
-            <li>Taught Advanced Placement courses for 9 years</li>
-            <li>Loves robots, cats, computers, and especially his wife</li>
-            <li>Use the "Bio" button to read more - you won't be sorry</li>
-        </ul>
-
-    </div>
-    
+    <!-- Third column--> 
     <div class="content_panel_3col_section">
-        <div class="header_01">News</div>
-        
-        <div class="news_section">
-            <div class="news_image">
-            	<img src="images/templatemo_image_02.jpg" alt="Free Website" />
-            </div>
-            <div class="news_content">
-                <div class="news_title">AP CSP comes to AHS</div>
-                <p>The time has come to enroll in the next greatest AP class - AP Computer Science Principles. This is a new survey course of computer science that will make you forget the time...every time. Use the button above to see the course page.</p>
-       		</div>
-    	</div>
-    
-   		<div class="margin_bottom_30"></div>
-    
-        <div class="news_section">
-            <div class="news_image">
-            	<img src="images/templatemo_image_03.jpg" alt="CSS Template" />
-            </div>
-            <div class="news_content">
-                <div class="news_title">STEM Robotics competes in VEX Tournament</div>
-                <p>AHS STEM Robotics has created two new VEX robotics teams and will be hosting an upcoming event.Read more on the STEM Robotics page using the button above.</p>
-            </div>
+        <div class="header_01">My Python Story</div>
+        <div class="image_box_01">
+            <a href="https://repl.it/ChEG/16">
+                <img src="images/InteractiveFiction_1.0.png" height=100 width=275>
+            </a>
         </div>
-    
-    	<div class="margin_bottom_30"></div>
-    
-        <div class="news_section">
-            <div class="news_image">
-            	<img src="images/templatemo_image_04.jpg" alt="Free CSS" />
-            </div>
-            <div class="news_content">
-                <div class="news_title">AP CSP training will knock your socks off</div>
-                <p>Yes...our class is just that good. You are looking at some of the results.</p>
-      	</div>
-    	</div>
-    </div>                
-    <div class="margin_bottom_20"></div>
-</div> <!-- end of content panel -->
-</div> <!-- end of content wrapper -->
+        <div class="p_section"><div align="center">AP CSP comes to AHS</div></div>
+         <p>This first Python project is an interactive story that teaches students good classroom norms.
+         Accompany Chautauqua on her journey through the making of her own story by clicking the picture above.</p>
+     </div>
+</div>
+</div> 
+<!-- Ends the body section -->
 
+<!-- This creates a footer section to the page. -->
 <div id="templatemo_footer_wrapper">
 <div id="templatemo_footer_panel">
     <a href="http://www.templatemo.com/page/1" target="_blank">Free CSS Templates</a>. You may download, edit and apply this layout for your websites. Credit goes to <a href="http://paulw.deviantart.com/art/55-Abstract-Tech-Brushes-86285028" target="_blank">Paul W</a> and <a href="http://www.photovaco.com" target="_blank">Free Photos</a> for photos used in this template.
-    <p>Copyright © 2016 Mr. Pittman</p> 
-    <div class="margin_bottom_20"></div>
-</div> <!-- end of footer wrapper-->
+    <div class="margin_bottom_20">
+        
+</div>
+</div>
 
 </html>
